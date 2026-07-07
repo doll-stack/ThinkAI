@@ -1,0 +1,222 @@
+*{
+    background: #000;
+    font-family: "Arial";
+    color: #ccc;
+   
+}
+.sidebar{
+    width: 250px;
+    height: 100vh;
+    border-right: 1px solid #ccc;
+}
+
+.side-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+.side-navbar a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+}
+.side-navlogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    box-sizing: border-box;
+}
+.side-navlogo img{
+    height: 50px;
+    width: 50px;
+}
+
+.sidebar-menu{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+.sidebar-menu i{
+    margin-right: 10px;
+}
+.sidebar-menu a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.sidebar-menu a:hover{
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+
+}
+.sidebar-footer a{
+    display: flex;
+    justify-content: column;
+    gap: 10px;
+    text-decoration: none;
+    color: #ccc;
+    position: fixed;
+    bottom: 60px;
+    width: 15%;
+    padding: 10px;
+}
+.sidebar-footer-last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    width: 15%;
+    padding: 10px;
+
+}
+.sidebar-footer-last a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 15px;
+}
+.profile-pic img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.main-content-header{
+    position: fixed;
+    top: 30px;
+    left: 280px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    gap: 1000px;
+}
+.main-content-header button:hover{
+    font-size: 20px;
+    color: #ccc;
+}
+.new-chat{
+    position: fixed;
+    top: 300px;
+    left: 700px;
+    display: flex; 
+}
+.input{
+    font-size: 50px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+}
+.chat {
+    position: fixed;
+    top: 400px;
+    background-color: #1a1a1a;
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0px 24px;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.chat input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    border: none;
+}
+.files {
+    background-color: #1a1a1a;
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.files:hover {
+    color: #fff;
+    font-size: 22px;
+    transition: 0.3s;
+}
+.chat button{
+    width: 20%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+.heading h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading a{
+    text-decoration: none;
+    font-size: 100px;
+}
+.details{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.details input {
+    width: 20%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: #ccc;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.summit {
+    display: flex;
+    gap: 150px;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+.summit a{
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: x-large;
+    border: #000 0.5px solid;
+    padding: 10px 10px 10px 10px;
+}
+.summit a:hover{
+    color: black;
+    background-color: aqua;
+}
