@@ -3,62 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatBot</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class ="contain">
-    <!-- sidebar -->
-        <div class="sidebar">
-            <div class="side-navbar">
-                <div class="side-navlogo">
-                    <a href="#"><img src="logo.png" alt="Logo"></a>
-                    <a href="#" class="close-sidebar"><i class="fa-regular fa-square-minus"></i></a>
-                </div>
-            </div>
-            <div class="sidebar-menu">
-                <a href="#New Chat"><i class="fa-regular fa-square-plus"></i> New Chat</a>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search Chats</a>
-                <a href="#"><i class="fa-regular fa-clock"></i> History</a>
-                <a href="#"><i class="fa-solid fa-paperclip"></i> Pinned</a>
-                <a href="#"><i class="fa-regular fa-comment"></i> Chats</a>
-            </div>
-            <div class="sidebar-footer">
-                <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
-                <br>
-                <a href="#" style="bottom: 100px; position: fixed;"><i class="fa-regular fa-user"></i> Profile</a>
-            </div>
-            <div class="sidebar-footer-last">
-                <div class="profile-pic">
-                    <img src="profile.jpg">
-                </div>
-                <a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
-            </div>
-        </div>
+    <div class="heading">
+        <h1>
+            <a href="#"><img src="logo.png" alt="Logo" style="height: 400px; width: 400px;"></a>
+            <a href="#">ThinkAI</a>
+        </h1>
     </div>
-    <div class="contain">
-        <!-- main content -->
-        <div class="main-content-header">
-            <div class="dropdown">
-                <button class="dropdown-btn" style="background-color: #2f2f2f; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
-                    ThinkAI <i class="fa-solid fa-chevron-down arrow-icon"></i>
-                </button>
-            </div>
-            <button class="Upgrade-btn" style="background-color: #ffcc00; color: #000; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
-                Upgrade <i class="fa-solid fa-crown"></i>
-            </button>
-        </div>
-        <div class="new-chat" id="New Chat">
-            <h2>What's the today's agenda?</h2>
-        </div>
-        <div class="chat">
-            <div class="files"><i class="fa-solid fa-plus"></i></div>
-            <input type="text" placeholder="Ask me anything..." id="userInput">
-            <button class="send">SEND <i class="fa-solid fa-share-nodes"></i></button>
-        </div>
+    <div class="details">
+        <input type="text" placeholder="Enter Your Email...">
+        <input type="password" placeholder="Password...">
+    </div>
+    <div class="summit">
+        <a href="index.html" class="login">Login</a>
+        <a href="index.html" class="login">Signin</a>
     </div>
 </body>
 </html>
