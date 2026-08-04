@@ -92,17 +92,106 @@
 }
 .main-content-header{
     position: fixed;
-    top: 30px;
+    top: 0px;
     left: 280px;
     width: 100%;
     display: flex;
     align-items: center;
-    font-size: 50px;
+    font-size: 10px;
     gap: 1000px;
 }
 .main-content-header button:hover{
     font-size: 20px;
     color: #ccc;
+    transition: 0.3s;
+}
+.model-container {
+    position: relative;
+    display: inline-block;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+
+.model-btn {
+    background: #2b2b2b;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.model-dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+
+    width: 220px;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1000;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: .2s ease;
+}
+
+.model-item {
+    font-size: 14px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.model-item:hover {
+    background: #2d2d2d;
+}
+
+/* Hover on button OR dropdown */
+.model-btn:hover+.model-dropdown,
+.model-dropdown:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.upgrade-container {
+    position: relative;
+    display: inline-block;
+    padding-top: 100px;
+}
+
+.upgrade-btn {
+    padding: 10px 20px;
+    background: #facc15;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Hidden by default */
+.upgrade-card {
+    font-size: 10px;
+    margin-right: 0;
+    padding: 10px;
+    background: #1a1a1a;
+    border: 1px solid #ccc;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all .25s ease;
+
+    z-index: 999;
+}
+
+/* Show card when hovering the button */
+.upgrade-btn:hover+.upgrade-card,
+.upgrade-card:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 .new-chat{
     position: fixed;
